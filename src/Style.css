@@ -1,0 +1,123 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a2e; /* Deep navy for a modern look */
+  color: #e4e4e4; /* Light gray for text contrast */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffdf8b; /* Brand color for the header */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.task-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form select,
+.task-form button {
+  padding: 10px;
+  border: 2px solid #6c757d; /* Neutral border */
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light background for inputs */
+  color: #333; /* Dark text for readability */
+  font-size: 1rem;
+}
+
+.task-form button {
+  background-color:  #bcab10; /* Green for action buttons */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-form button:hover {
+  background-color: #bcab10; /* Slightly darker green on hover */
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: 2px solid #6c757d; /* Neutral border for tasks */
+  margin: 10px 0;
+  border-radius: 10px;
+  background-color: #232946; /* Subtle navy background for tasks */
+  color: #e4e4e4; /* Light text for contrast */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.task-list li:hover {
+  transform: scale(1.02); /* Slight zoom effect */
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #a8d5e2; /* Soft blue for completed tasks */
+}
+
+.task-list button {
+  background-color: transparent;
+  border: none;
+  color: #ffdf8b; /* Brand color for buttons */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.task-list button:hover {
+  color: #f9e7b8; /* Highlighted color on hover */
+}
+
+.progress-tracker {
+  margin-top: 20px;
+  color: #e4e4e4;
+}
+
+.progress-bar {
+  height: 12px;
+  background: #6c757d; /* Neutral background for progress bar */
+  margin: 10px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #8bc34a); /* Gradient green for progress */
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.clear-btn {
+  background-color: #dc3545; /* Red for clear button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.clear-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
