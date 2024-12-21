@@ -1,4 +1,4 @@
-# TaskBuddy
+<img width="1437" alt="Screenshot 2024-12-21 at 3 40 30 PM" src="https://github.com/user-attachments/assets/20c9f435-84c9-4ac9-ae83-025cb619c627" /># TaskBuddy
 
 TaskBuddy is a task management app built with React. It allows users to add, update, delete, and track their tasks with ease. The app also includes a progress tracker and the ability to clear all tasks at once.
 
@@ -36,3 +36,6 @@ Create a new branch (git checkout -b feature-name).
 Commit your changes (git commit -am 'Add new feature').
 Push to the branch (git push origin feature-name).
 Create a new Pull Request.
+
+
+
