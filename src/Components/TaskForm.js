@@ -17,13 +17,16 @@ function TaskForm({ addTask }) {
 
   return (
     <form onSubmit={handleSubmit} className="task-form">
+      <div id="vishnu">
       <input
         type="text"
         value={task}
         onChange={(e) => setTask(e.target.value)}
         placeholder="Enter your task"
         required
-      />
+      /> <span><button type="submit">Add Task</button></span>
+</div>
+      <div id="btns">
       <select value={priority} onChange={(e) => setPriority(e.target.value)}>
         <option value="High">High</option>
         <option value="Medium">Medium</option>
@@ -34,7 +37,7 @@ function TaskForm({ addTask }) {
         <option value="Work">Work</option>
         <option value="Personal">Personal</option>
       </select>
-      <button type="submit">Add Task</button>
+      </div>
     </form>
   );
 }

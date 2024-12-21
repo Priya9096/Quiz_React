@@ -19,6 +19,7 @@ function TaskList({ tasks, updateTask, deleteTask }) {
               {task.completed ? "Undo" : "Complete"}
             </button>
             <button onClick={() => deleteTask(index)}>Delete</button>
+            
           </div>
         </li>
       ))}

@@ -2,7 +2,7 @@
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
-  background-color: #1a1a2e; /* Deep navy for a modern look */
+  background-color: black; /* Deep navy for a modern look */
   color: #e4e4e4; /* Light gray for text contrast */
 }
 
@@ -12,10 +12,20 @@ h1 {
   color: #ffdf8b; /* Brand color for the header */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+#vishnu {
+  display: flex;
+  gap: 10px;
+
+}
+#btns {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 
 .task-form {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -32,15 +42,15 @@ h1 {
 }
 
 .task-form button {
-  background-color:  #bcab10; /* Green for action buttons */
-  color: white;
+  background-color:  #5df7d8; /* Green for action buttons */
+  color: black;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .task-form button:hover {
-  background-color: #bcab10; /* Slightly darker green on hover */
+  background-color: #5df79b; /* Slightly darker green on hover */
 }
 
 .task-list {
@@ -52,10 +62,10 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  border: 2px solid #6c757d; /* Neutral border for tasks */
+  border: 0px solid #6c757d; /* Neutral border for tasks */
   margin: 10px 0;
   border-radius: 10px;
-  background-color: #232946; /* Subtle navy background for tasks */
+  background-color: #353535; /* Subtle navy background for tasks */
   color: #e4e4e4; /* Light text for contrast */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
@@ -63,11 +73,12 @@ h1 {
 
 .task-list li:hover {
   transform: scale(1.02); /* Slight zoom effect */
+  background-color: #5b5a5a;
 }
 
 .task-list li.completed {
   text-decoration: line-through;
-  color: #a8d5e2; /* Soft blue for completed tasks */
+  color: white; /* Soft blue for completed tasks */
 }
 
 .task-list button {
@@ -99,13 +110,13 @@ h1 {
 
 .progress {
   height: 100%;
-  background: linear-gradient(90deg, #4caf50, #8bc34a); /* Gradient green for progress */
+  background: linear-gradient(90deg, #feba01, #8bc34a); /* Gradient green for progress */
   border-radius: 10px;
   transition: width 0.3s ease;
 }
 
 .clear-btn {
-  background-color: #dc3545; /* Red for clear button */
+  background-color: #eb521d; /* Red for clear button */
   color: white;
   border: none;
   padding: 10px 20px;
